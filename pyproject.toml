@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "scc-brainai-planning"
+version = "1.0.0"
+description = "Couche de planification de BrainAI — transforme un objectif en plan d'action structuré, ordonné, tracé et gouverné (phases/étapes/tâches, dépendances, stratégies, manifeste exécutable par le Kernel). Sans LLM obligatoire, validation humaine, stdlib pur, déterministe, sans réseau."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "Proprietary" }
+authors = [{ name = "Seror Créative" }]
+keywords = ["scc", "brainai", "planning", "plan", "orchestration"]
+dependencies = []
+
+[project.scripts]
+scc-brain-planning = "scc_brainai_planning.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-q"

@@ -1,0 +1,17 @@
+{
+  "scc_root": "..",
+  "paths": {
+    "data_dir": "data"
+  },
+  "as_of": "2026-07-06T00:00:00+00:00",
+  "integrate_learning": true,
+  "integrate_reasoning": true,
+  "weights": {
+    "impact": 0.35,
+    "risk": 0.30,
+    "complexity": 0.20,
+    "coverage": 0.15
+  },
+  "provider_order": ["deterministic"],
+  "extra": {}
+}
